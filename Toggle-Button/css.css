@@ -1,0 +1,37 @@
+.bg {
+    margin: 5px;
+    padding: 5px;
+    border: 5px solid skyblue;
+    width: 150px;
+    height: 60px;
+    border-radius: 30%;
+    background-color: whitesmoke;
+}
+
+.circle {
+
+    border: 5px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: ani2;
+    animation-duration: 1s;
+    border-color: lightgray;
+}
+
+.circle:hover {
+    animation-name: ani1;
+    animation-duration: 1s;
+    border-color: gray
+}
+
+@keyframes ani1 {
+    from {border-color: lightgray;}
+    to {border-color: gray}
+}
+
+@keyframes ani2 {
+    from {border-color: gray;}
+    to {border-color: lightgray;}
+}
