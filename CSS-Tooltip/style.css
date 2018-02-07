@@ -1,0 +1,34 @@
+body {
+    height: 10em;
+}
+
+.center {
+    width: 10em;
+    margin: auto;
+    margin-top: 10em;
+}
+
+.text {
+    position: relative;
+    display: inline-block;
+}
+
+.text .tooltip {
+    background-color: rgba(128, 0, 128, 0.85);
+    color: white;
+    text-align: center;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    position: absolute;
+    opacity: 0;
+    bottom: 100%;
+    z-index: 10;
+    animation-fill-mode: forwards;
+    transition: 0.2s ease-in-out;
+    transition-property :opacity, bottom;
+}
+
+.text:hover .tooltip {
+    opacity: 1;
+    bottom: 120%;
+}
