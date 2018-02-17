@@ -1,0 +1,284 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    width:95%;
+    margin: auto;
+    background-color: black;
+}
+
+.image-div{
+    margin: auto;
+    align-content: center;
+    width: 14em;
+    height: 14em;
+}
+
+.border{
+    position: relative;
+    width: 14.5em;
+    height: 14.5em;
+}
+
+.image-border1{
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.image-border2{
+    border: solid rgb(30, 156, 230) 0.75em;
+    background-color: rgba(255, 255,255, 0.8);
+    border-radius: 50%;
+    padding: 0.5em;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    vertical-align: middle;
+    top: 0;
+    left: 0;
+}
+
+.b1{
+    border-radius: 50%;
+    position: relative;
+    padding: 0.6em;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.image{
+    width:100%;
+    height:100%;
+}
+
+.m-2{
+    margin-top: 10em;
+}
+
+/* Image*/
+.start-animate{
+    animation: linear forwards;
+    animation-name: start-animate;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+@keyframes start-animate{ 
+    0%  {transform: none; width:1em;height: 1em; top:5.6em;left:5.6em; border-width:0.5em}
+    5%  {transform: none; width:100%;height: 100%;top:0;left:0; border-width:6em}
+    10%  {transform: none; border-width:0.75em}
+    20%    {transform: none}
+    25%    {transform: rotateY(0)}
+    37.5%   {transform: rotateY(180deg)}
+    45%   {transform: rotateY(0)}
+}
+
+
+.start-ani-2{
+    animation: linear;
+    animation-name: start-ani-2;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+@keyframes start-ani-2{ 
+    0%  {transform: none;opacity: 0; width:14.5em; height: 14.5em;margin-left:0;margin-top:0} 
+    12%  {transform: none;opacity: 0; width:16em; height: 16em;margin-left:-0.75em;margin-top:-0.75em} 
+    13%  {transform: none;opacity: 1;width:16em; height: 16em;margin-left: -0.75em;margin-top:-0.75em} 
+    20%  {transform: none;opacity: 1;width:14.5em; height: 14.5em;margin-left: 0;margin-top:0} 
+
+    25%    {transform: rotateY(0)}
+    27%    {transform: rotateY(0)}
+    33%   {transform: rotateY(180deg)}
+    37%   {transform: rotateY(180deg)}
+    42%   {transform: rotateY(0)}
+    45%   {transform: rotateY(0)}
+
+    70%   {transform: none;width: 100%; height:100%;top:0em}
+
+    72.5%  {transform: none; height: 100%;top:0em;margin-left: 0;margin-top:0}
+    73.5%  {transform: none;width:16em; height: 16em;margin-left: -0.75em;margin-top:-0.75em} 
+    78.5% {transform: rotate(360deg);width:16em; height: 16em;margin-left: -0.75em;margin-top:-0.75em}
+    80.5% {transform: rotate(360deg);width:16em; height: 16em;margin-left: -0.75em;margin-top:-0.75em}
+    84.5% {transform: rotate(720deg);width:16em; height: 16em;margin-left: -0.75em;margin-top:-0.75em}
+    86.5% {transform: rotate(720deg);width:16em; height: 16em;margin-left: -0.75em;margin-top:-0.75em}
+    90.5% {transform: rotate(0deg);width: 100%; height:100%;margin-left: 0;margin-top:0}
+}
+
+
+.jump-animate{
+    animation: linear;
+    animation-name: jump-animate;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes jump-animate{ 
+    0%   {transform: none; height: 14.5em;top:0em}
+    50%   {transform: none; height: 14.5em;top:0em}
+    50.5%   {transform: none; height: 13.5em;top:1em}
+    51%   {transform: none; height: 14.5em;top:0em}
+    53%   {transform: none; height: 14.5em;top:-6em}
+    55.5%   {transform: none; height: 12.5em;top:-6em}
+    56%   {transform: none; height: 14.5em;top:0em}
+    56.5%   {transform: none; height: 10.5em;top:4em}
+    57.5%   {transform: none; height: 14.5em;top:0em}
+    58.5%   {transform: none; height: 14.5em;top:-3em}
+    59%   {transform: none; height: 14.5em;top:0em}
+    60%   {transform: none; height: 13.5em;top:1em}
+    61%   {transform: none; height: 14.5em;top:0em}
+    65%   {transform: none; height: 14.5em;top:0em} 
+    65.5%   {transform: none; height: 13.5em;top:1em}
+    66%   {transform: none; height: 14.5em;top:0em}
+    68%   {transform: none; height: 14.5em;top:-6em}
+    69%   {transform: none; height: 14.5em;top:-5em}
+
+    89%   {transform: none; height: 14.5em;top:-5em}
+    89.5%   {transform: none; height: 14.5em;top:0em}
+    90%   {transform: none; height: 10.5em;top:4em}
+    91%   {transform: none; height: 14.5em;top:0em}
+    92%   {transform: none; height: 14.5em;top:-3em}
+
+    92.5%   {transform: none; height: 14.5em;top:0em}
+    93.5%   {transform: none; height: 13.5em;top:1em}
+    94.5%   {transform: none; height: 14.5em;top:0em}
+}
+
+.rotate-split{
+    animation: linear;
+    animation-name: rotate-split;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+@keyframes rotate-split{ 
+    0%  {transform: none; height: 100%;top:0em}
+    5%  {transform: none;width:16em; height: 16em;margin-left: -0.75em;margin-top:-0.75em} 
+    30% {transform: rotate(360deg);width:16em; height: 16em;margin-left: -0.75em;margin-top:-0.75em}
+    40% {transform: rotate(360deg);width:16em; height: 16em;margin-left: -0.75em;margin-top:-0.75em}
+    60% {transform: rotate(720deg);width:16em; height: 16em;margin-left: -0.75em;margin-top:-0.75em}
+    70% {transform: rotate(720deg);width:16em; height: 16em;margin-left: -0.75em;margin-top:-0.75em}
+    100%{transform: rotate(0deg); height:100%;top:0em}
+}
+
+.circle-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.quarter-ring {
+    position: absolute;
+    width: 7.25em;
+    height: 7.25em;
+    border-style: solid;
+    border: solid rgba(0, 185, 255,0.5);
+}
+
+  .ring-top-left {
+    border-width: 10px 0 0 10px;
+    left: 0;
+    top: 0;
+    border-top-left-radius: 200px;
+    float: left;
+}
+  
+  .ring-top-right {
+    border-width: 10px 10px 0 0px;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 200px;
+    float: right;
+}
+  
+  .ring-bottom-left {
+    border-width: 0px 0 10px 10px;
+    left: 0;
+    bottom: 0;
+    border-bottom-left-radius: 200px;
+    float: left;
+}
+  
+  .ring-bottom-right {
+    right: 0;
+    bottom: 0;
+    border-width: 0px 10px 10px 0px;
+    border-bottom-right-radius: 200px;
+    float: right;
+}
+
+
+
+
+
+
+
+.rotate-animate-1{
+    animation: linear;
+    animation-name: rotate-animate-1;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: 3;
+}
+
+@keyframes rotate-animate-1{ 
+    0%    {transform: rotateY(0)}
+    50%   {transform: rotateY(180deg)}
+    100%   {transform: rotateY(0)}
+}
+
+.rotate-animate-2{
+    animation-name: ani2;
+    animation-duration: 5s;
+    animation-delay: 0;
+    animation-iteration-count: 3;
+}
+
+@keyframes rotate-animate-2{ 
+    0%    {transform: rotateY(0)}
+    10%    {transform: rotateY(0)}
+    35%   {transform: rotateY(180deg)}
+    60%   {transform: rotateY(180deg)}
+    85%   {transform: rotateY(0)}
+    100%   {transform: rotateY(0)}
+}
+
+
+
+.animate{
+    animation-name: example;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: 3;
+}
+
+@keyframes example {
+    0%    {transform: none;border-color: rgb(155, 219, 246);border-width: 10px; height: 12em;top:0em;}
+    15%   {transform: none;border-color: rgb(30, 156, 230);border-width: 5px; height: 4em;top:4em}
+    25%   {transform: none;border-color: rgb(155, 219, 246);border-width: 20px; height: 10em;top:1em}
+    40%   {transform: none;border-color: rgb(30, 156, 230);border-width: 10px; height: 12em;top:-4em}
+    47%   {transform: none;border-color: rgb(155, 219, 246); height: 10em;top:4em}
+    57%   {transform: none;border-color: rgb(30, 156, 230); height: 12em;top:-2em}
+    61%   {transform: none;border-color: rgb(155, 219, 246); height: 11em;top:0em}
+    63%   {transform: none;border-color: rgb(30, 156, 230); height: 12em;top:0em}
+    75%   {transform: rotateY(180deg)}
+    87%   {transform: rotateY(-180deg)}
+    95%   {transform: rotateY(0deg)}
+    100%  {transform: none;border-color: rgb(155, 219, 246); height: 12em;top:0em;}
+}
