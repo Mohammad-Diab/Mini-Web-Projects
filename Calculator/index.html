@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <title>Calculater</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="calc-body">
+            <h1>Calculator</h1>
+            <div class="input">
+                <input id="result" type="text" />
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber('1')">
+                        <span>1</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber('2')">
+                        <span>2</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber('3')">
+                        <span>3</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="clearText()">
+                        <span>c</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber('4')">
+                        <span>4</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber('5')">
+                        <span>5</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber('6')">
+                        <span>6</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber(' + ')">
+                        <span>+</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber('7')">
+                        <span>7</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber('8')">
+                        <span>8</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber('9')">
+                        <span>9</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber(' - ')">
+                        <span>-</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber('0')">
+                        <span>0</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber('(')">
+                        <span>(</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber(')')">
+                        <span>)</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber(' / ')">
+                        <span>÷</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber('.')">
+                        <span>.</span>
+                    </button>
+                </div>
+                <div style="width:49.6%;" class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="findResult()">
+                        <span>=</span>
+                    </button>
+                </div>
+                <div class="cell">
+                    <button class="light" onmousemove="trackMouse(event,this)" onclick="inputNumber(' * ')">
+                        <span>×</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

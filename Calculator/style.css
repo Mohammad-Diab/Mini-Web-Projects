@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Berkshire Swash", sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 3em;
+    margin: 0.25em;
+    color: #c0392b;
+}
+
+.calc-body {
+    width: 40em;
+    height: fit-content;
+    margin: 2em auto;
+    padding: 0 0 2em 0;
+    border: #c0392b solid 2px;
+}
+
+.input {
+    width: 95%;
+    padding: 1em 1em 0.5em;
+    margin: auto;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: auto;
+    font-size: 2em;
+    font-family: "Berkshire Swash", 'Courier New', Courier, monospace;
+    color: #f1c40f;
+    background-color: #c0392b;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    padding: 0.5em 0.25em;
+    caret-color: transparent;
+}
+
+input:focus, input:active {
+    outline-color: transparent;
+}
+
+.row {
+    width: 95%;
+    padding: 0.25em 1em 0.25em;
+    margin: auto;
+}
+
+.cell {
+    display: inline-block;
+    width: 24.4%;
+}
+
+.cell button {
+    display: block;
+    width: 100%;
+    border-radius: 0.25em;
+}
+
+.light {
+    position: relative;
+    background: #d35400;
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+}
+
+.light span {
+    position: relative;
+}
+
+.light::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #f39c12, transparent);
+    transform: translate(-50%, -50%);
+    transition: width .3s ease, height .3s ease;
+}
+
+.light:hover::before {
+    --size: 250px;
+}
