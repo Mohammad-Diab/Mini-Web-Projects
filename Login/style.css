@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    background: #ec6659;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container{
+    position: absolute;
+    top: calc(50% - 170px);
+    width: 100%;
+}
+
+.form {
+    background: white;
+    padding: 2em;
+    width: 75%;
+    max-width: 550px;
+    height: fit-content;
+    margin: auto;
+
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+h1 {
+    color: #402624;
+    text-align: center;
+    margin: 0.5em auto 1.5em auto;
+    text-transform: uppercase;
+}
+
+input {
+    border: none;
+    font-size: 1.2em;
+    padding: 0.5em;
+    display: inline-block;
+    width: calc(90% - 50px);
+}
+
+input::placeholder {
+    font-size: 0.8em;
+    color: rgb(100, 100, 100);
+}
+
+input:active, input:focus {
+    outline: none;
+}
+
+.form-div {
+    width: 95%;
+    border: solid 2px rgb(240, 240, 240);
+    align-content: center;
+    margin: 1em auto;
+}
+
+.input-img {
+    margin: 0.25em;
+    display: block;
+    float: left;
+    background-image: url(sprite.png);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.username div {
+    background-position: -64px -224px;
+}
+
+.password div {
+    background-position: -256px -288px;
+}
+
+.login {
+    display: block;
+    padding: 0.6em 0;
+    background-color: #ec6659;
+    border-color: #e07268;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ec5e51;
+}
+
+.login:focus, .login:active {
+    outline: none;
+}
+
+.login:active {
+    background-color: #ee4233;
+}
