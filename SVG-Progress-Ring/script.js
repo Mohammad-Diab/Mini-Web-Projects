@@ -1,0 +1,1 @@
+var ring = new ProgressRing('percent', 270, 15, 'blue', 'ltr');
