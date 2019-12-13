@@ -1,0 +1,82 @@
+/*
+ * 
+ * Developed by: MOHAMMAD DIAB 
+ * Released under the MIT license.
+ * 
+ * File body hash: 0x
+ * Export date: Sun Jun 23 2019 07:22:50 UTC
+ * 
+ * Kod by Mohammad™.
+ * https://www.linkedin.com/in/mohammaddiab0
+ * Copyright © 2019 all right reserved.
+ * 
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    font-size: 16px;
+}
+
+
+/* Normal Status */
+
+a.fd-button,
+button.fd-button,
+input[type=submit].fd-button,
+input[type=button].fd-button {
+    text-decoration: none;
+    margin: 0.25rem 0.5rem;
+    padding: 0.25rem 1.5rem;
+    color: #000;
+    background-color: #ccc;
+    border: 2px solid #ccc;
+    display: inline-block;
+    cursor: default;
+    font-size: 1rem;
+    border-radius: 0;
+    outline: none;
+}
+
+a.fd-button:hover,
+button.fd-button:hover,
+input[type=submit].fd-button:hover,
+input[type=button].fd-button:hover {
+    border-color: #7A7A7A;
+}
+
+a.fd-button:active,
+button.fd-button:active,
+input[type=submit].fd-button:active,
+input[type=button].fd-button:active {
+    background-color: #999;
+    border-color: #999;
+}
+
+
+/* Disabled Status */
+
+a.fd-button:disabled,
+button.fd-button:disabled,
+input[type=submit].fd-button:disabled,
+input[type=button].fd-button:disabled,
+a.fd-button.disabled,
+button.fd-button.disabled,
+input[type=submit].fd-button.disabled,
+input[type=button].fd-button.disabled {
+    pointer-events: none !important;
+    color: #747474 !important;
+    background-color: #c6c6c6 !important;
+    border-color: #c6c6c6 !important;
+}
+
+a.fd-button {
+    transform: rotate3d(0.0, 0.4, 0, 15deg);
+    transform-origin: center right;
+    perspective: 5000px;
+}

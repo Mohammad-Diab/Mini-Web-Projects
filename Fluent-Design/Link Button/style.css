@@ -1,0 +1,55 @@
+/*
+ * 
+ * Developed by: MOHAMMAD DIAB 
+ * Released under the MIT license.
+ * 
+ * File body hash: 0x
+ * Export date: Sun Jun 23 2019 07:22:50 UTC
+ * 
+ * Kod by Mohammad ™.
+ * https://www.linkedin.com/in/mohammaddiab0
+ * Copyright © 2019 all right reserved.
+ * 
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    font-size: 16px;
+}
+
+
+/* Normal Status */
+
+.fd-link {
+    text-decoration: none;
+    margin: 0.25rem 0.5rem;
+    font-weight: 500;
+    color: #2996cc;
+    transition: color 0.2s ease-out;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.fd-link:hover {
+    color: #666;
+}
+
+.fd-link:active {
+    color: #999;
+}
+
+
+/* Disabled Status */
+
+.fd-link.disabled,
+.fd-link[disabled=disabled] {
+    pointer-events: none !important;
+    color: #666 !important;
+}

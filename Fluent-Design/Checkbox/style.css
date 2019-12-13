@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    font-size: 16px;
+}
+
+
+/* Normal Status */
+
+.fd-checkbox {
+    margin: 0.75rem 0.25rem;
+}
+
+.fd-checkbox>input[type=checkbox] {
+    z-index: -1;
+    opacity: 0;
+    clip: rect(0, 0, 0, 0);
+    display: none;
+}
+
+.fd-checkbox>input[type=checkbox]+label {
+    position: relative;
+}
+
+.fd-checkbox>input[type=checkbox]+label::before {
+    content: "";
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.125rem solid #333;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    position: relative;
+    top: -0.125rem;
+    transition: left 0.2s ease-out;
+}
+
+
+/* Hover Status */
+
+.fd-checkbox>input[type=checkbox]+label:hover::before {
+    border-color: #000 !important;
+}
+
+
+/* Foucesed Status */
+
+.fd-checkbox>input[type=checkbox]+label:active::before {
+    border-color: #666 !important;
+    background-color: #666 !important;
+}
+
+
+/* Checked Status */
+
+.fd-checkbox>input[type=checkbox]:checked+label::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m 3,13 L9.2,18.6 L21.8,6.4" fill="none" stroke-width="2" stroke="white"/></svg>');
+    background-color: #2996cc;
+    border-color: #2996cc;
+}
+
+
+/* Disabled-Off Status */
+
+.fd-checkbox.disabled>input[type=checkbox]+label,
+.fd-checkbox>input[type=checkbox]:disabled+label {
+    pointer-events: none !important;
+    color: #999 !important;
+}
+
+.fd-checkbox.disabled>input[type=checkbox]+label::before,
+.fd-checkbox>input[type=checkbox]:disabled+label::before {
+    border-color: #999 !important;
+}
+
+
+/* Disabled-On Status */
+
+.fd-checkbox.disabled>input[type=checkbox]:checked+label::before,
+.fd-checkbox>input[type=checkbox]:disabled:checked+label::before {
+    background-color: #999 !important;
+}

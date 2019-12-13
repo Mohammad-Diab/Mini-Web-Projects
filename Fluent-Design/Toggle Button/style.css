@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    font-size: 16px;
+}
+
+
+/* Normal Status */
+
+.fd-toggleButton {
+    margin: 0.75rem 0.25rem;
+}
+
+.fd-toggleButton>input[type=checkbox] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    clip: rect(0, 0, 0, 0);
+    display: none;
+}
+
+.fd-toggleButton>input[type=checkbox]+:not(.fd-toggleButton-caption) {
+    display: block;
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.fd-toggleButton>input[type=checkbox]~.fd-toggleButton-caption {
+    position: relative;
+    font-size: 0.625rem;
+    display: inline-block;
+}
+
+.fd-toggleButton>input[type=checkbox]~.fd-toggleButton-caption::before {
+    content: "";
+    width: 2.75rem;
+    height: 1.25rem;
+    border: 0.125rem solid #333;
+    border-radius: 0.625rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.75rem;
+    position: relative;
+    top: -0.0625rem;
+}
+
+.fd-toggleButton>input[type=checkbox]~.fd-toggleButton-caption::after {
+    content: "";
+    position: absolute;
+    width: 0.625rem;
+    height: 0.625rem;
+    background-color: #333;
+    border-radius: 50%;
+    top: 0.25rem;
+    left: 0.3125rem;
+    transition: left 0.2s ease-out;
+}
+
+
+/* Foucesed Status */
+
+.fd-toggleButton>input[type=checkbox]~.fd-toggleButton-caption:active::before {
+    background-color: #666 !important;
+    border-color: #666 !important;
+}
+
+.fd-toggleButton>input[type=checkbox]~.fd-toggleButton-caption:active::after {
+    background-color: #fff !important;
+}
+
+
+/* Checked Status */
+
+.fd-toggleButton>input[type=checkbox]:checked~.fd-toggleButton-caption::before {
+    background-color: #2996cc;
+    border-color: #2996cc;
+}
+
+.fd-toggleButton>input[type=checkbox]:checked~.fd-toggleButton-caption::after {
+    background-color: #fff;
+    left: 1.75rem;
+}
+
+
+/* Disabled-Off Status */
+
+.fd-toggleButton>input[type=checkbox]:disabled~.fd-toggleButton-caption {
+    pointer-events: none !important;
+    color: #999 !important;
+}
+
+.fd-toggleButton>input[type=checkbox]:disabled~.fd-toggleButton-caption::before {
+    border-color: #999 !important;
+}
+
+.fd-toggleButton>input[type=checkbox]:disabled~.fd-toggleButton-caption::after {
+    background-color: #999 !important;
+}
+
+
+/* Disabled-On Status */
+
+.fd-toggleButton>input[type=checkbox]:disabled:checked~.fd-toggleButton-caption {
+    pointer-events: none !important;
+    color: #ccc !important;
+}
+
+.fd-toggleButton>input[type=checkbox]:disabled:checked~.fd-toggleButton-caption::before {
+    background-color: #ccc !important;
+    border-color: #ccc !important;
+}
+
+.fd-toggleButton>input[type=checkbox]:disabled:checked~.fd-toggleButton-caption::after {
+    background-color: #a3a3a3 !important;
+}
