@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="script.js"></script>
+    <title>Four Plus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="winLoad()">
+    <div>
+        <div class="title-bar">
+            <div class="control-buttons"> 
+                <div class="close"></div>
+                <div class="minimize"></div>
+                <div class="maximize"></div>
+            </div>
+
+            <div class="title">four pluses</div>
+
+        </div>
+        <div id="container" class="container" onclick="containerClick()">
+            <div class="console" id="console">
+                Four Pluses <span style="color:lightgreen" >version 1.2</span>
+                <br/>
+                Powered by <span style="color:khaki">JavaScript</span>.
+                <br/>
+                Develoed by <span style="color:lightblue">Mohammad Diab</span>.
+                <br/>
+                Put a number with 4 digits in your head, and I'll put one in my memory, then let's see who will hit the other number first.
+                <br/>
+                You can use digits <span style="color:lawngreen">[1-9]</span> for your number, and <span style="color:magenta">[+, &gt;]</span> for score.
+                <br/>
+                You can't use one digit <span style="color:tomato">twice</span>, all digits must be <span style="color:lime">unique</span>!
+                <br/>
+                For score: use <span style="color:springgreen">'+'</span> for a <span style="color:lime">right</span> digit in <span style="color:lime">right</span> 
+                position and <span style="color:gold">'&gt;'</span> for <span style="color:lime">right</span> digit in <span style="color:tomato">wrong</span> position.
+                <br/>
+                <span style="color:black;background-color:aquamarine">Let's get started...</span>
+                <br/>
+            </div>
+            <input id="textbox" class="textbox" maxlength="10" onkeypress="onKeyPressed(event)" type="text" />
+        </div>
+    </div>
+</body>
+
+</html>

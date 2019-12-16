@@ -1,0 +1,126 @@
+html{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    width: 95%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.container {
+    border: solid rgb(119, 140, 157) 0.1em;
+    border-top: 0;
+    border-radius: 0 0 0.25em 0.25em;
+    background-color: black;
+    color: snow;
+    padding: 0.5em;
+    height: calc(100vh - 6em);
+    overflow-y: auto;
+    overflow-x:hidden;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.4em;
+    margin-bottom: 2em
+}
+
+.console {
+    margin: 0.25em;
+    margin-bottom: 0;
+    font-size: 1em;
+}
+
+input[type=text] {
+    background-color: black;
+    font-family:inherit;
+    color: inherit;
+    border: none;
+    font-size: inherit;
+    margin: 0.25em;
+    margin-top: 0;
+    display: block;
+    width: 100%;
+    cursor: default;
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+.title-bar {
+    width: 100%;
+    height: 1.7em;
+    background: linear-gradient(rgba(234, 232, 234, 0.75), rgba(212, 210, 212, 0.75));
+    border-bottom: solid 0.1em rgb(175, 172, 175);
+    margin-top: 2em;
+    border-radius: 0.25em 0.25em 0 0;
+    display: flex;
+}
+
+.control-buttons {
+    display: flex;
+}
+
+.close {
+    border-radius: 50%;
+    background-color: rgb(255, 69, 83);
+    border: rgb(242, 19, 54) solid 0.05em;
+    width: 0.6em;
+    height: 0.6em;
+    margin: 0.5em 0.2em 0.5em 0.7em;
+    vertical-align: middle;
+    transition: background-color 1s;
+}
+
+.close:hover{
+    background-color: rgb(242, 19, 54);
+}
+
+.minimize {
+    border-radius: 50%;
+    background-color: rgb(255, 189, 0);
+    border: rgb(233, 160, 19) solid 0.05em;
+    width: 0.6em;
+    height: 0.6em;
+    margin: 0.5em 0.2em;
+    vertical-align: middle;
+    transition: background-color 1s;
+}
+
+.minimize:hover{
+    background-color: rgb(233, 160, 19);
+}
+
+.maximize {
+    border-radius: 50%;
+    background-color: rgb(41, 206, 66);
+    border: rgb(26, 171, 43) solid 0.05em;
+    width: 0.6em;
+    height: 0.6em;
+    margin: 0.5em 0.2em;
+    vertical-align: middle;
+    transition: background-color 1s;
+}
+
+.maximize:hover{
+    background-color: rgb(26, 171, 43);
+}
+
+.title {
+    vertical-align: middle;
+    margin: 0.3em 0.3em 0.3em 1em;
+    width: auto;
+    align-self: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-grow: 100;
+    text-align: center;
+    font-size: 1.05em;
+    color: rgb(67, 46, 46)
+}
