@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+#draw-canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 52px;
+    left: 0;
+}
+
+.temp-button {
+    position: relative;
+    z-index: 1;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: solid 1px lightgray;
+    line-height: 44px;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 4px 24px;
+    background-color: #fff;
+}
+
+.footer span {
+    font-weight: 400;
+}
