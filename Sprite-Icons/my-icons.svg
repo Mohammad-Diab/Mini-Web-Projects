@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <defs>
+          <symbol  viewBox="0 0 500 500" id="next-icon">
+              <style type="text/css">
+                  .str {stroke:inherit; stroke-width:10}
+                  .bg {fill: inherit}
+              </style>
+              <circle class="bg str" cx="250" cy="250" r="220"/>
+              <path class="str" fill="currentColor" d="M420 230l-100-100c-5-5-10-10-20-10s-20 10-20 20v50c0 5-5 10-10 10h-190c-5 0-10 5-10 10v80c0 5 5 10 10 10h190c5 0 10 5 10 10v50c0 10 10 20 20 20s15-5 20-10l100-100c13.5-13.5 13.5-26.5 0-40z"/>
+          </symbol>
+          <symbol viewBox="0 0 500 500" id="calender-icon">
+              <style type="text/css">
+                  .str {stroke:inherit;}
+                  .lgt-str{stroke-opacity: 0.7}
+                  .lgt-fil{fill-opacity: 0.7}
+                  .bg {fill: inherit}
+                  .fil {fill: inherit;}
+              </style>
+              <path d="M40 90h420v310c0 6-5 10-10 10h-400c-5 0-10-4-10-10v-310z" fill="#434242" class="str" stroke-width="10"/>
+              <path d="M65 60h370c14 0 25 11 25 25v15h-420v-15c0-14 11-25 25-25z" class="str fil" stroke="#434242" stroke-width="10"/>
+              <path d="M50 110h400v285c0 3-2 5-5 5h-390c-3 0-5-2-5-5v-285z" fill="#fff" class="str" stroke-width="10"/>
+              <rect fill="currentColor" height="59.997" width="89.998" class="lgt-str str" stroke-width="7.5" x="70" y="315"/>
+              <rect fill="currentColor" height="59.997" width="89.998" class="lgt-str str" stroke-width="7.5" x="160" y="315"/>
+              <rect fill="currentColor" height="59.997" width="89.998" class="lgt-str str" stroke-width="7.5" x="250" y="315"/>
+              <rect fill="currentColor" height="59.997" width="89.998" class="lgt-str str" stroke-width="7.5" x="340" y="315"/>
+              <rect fill="currentColor" height="59.998" width="89.998" class="lgt-str str" stroke-width="7.5" x="70" y="255"/>
+              <rect fill="currentColor" height="59.998" width="89.998" class="lgt-str str" stroke-width="7.5" x="160" y="255"/>
+              <rect fill="currentColor" height="59.998" width="89.998" class="lgt-str str" stroke-width="7.5" x="250" y="255"/>
+              <rect fill="currentColor" height="59.998" width="89.998" class="lgt-str str" stroke-width="7.5" x="340" y="255"/>
+              <rect fill="currentColor" height="59.998" width="89.998" class="lgt-str str" stroke-width="7.5" x="250" y="195"/>
+              <rect fill="currentColor" height="59.998" width="89.998" class="lgt-str str" stroke-width="7.5" x="340" y="195"/>
+              <rect height="59.997" width="89.998" class="str lgt-fil fil" stroke-width="7.5" x="70" y="135"/>
+              <rect height="59.997" width="89.998" class="str lgt-fil fil" stroke-width="7.5" x="160" y="135"/>
+              <rect height="59.997" width="89.998" class="str lgt-fil fil" stroke-width="7.5" x="340" y="135"/>
+              <rect height="59.997" width="89.998" class="str lgt-fil fil" stroke-width="7.5" x="250" y="135"/>
+              <rect height="59.998" width="89.998" class="str lgt-fil fil" stroke-width="7.5" x="70" y="195"/>
+              <rect height="59.998" width="89.998" class="str lgt-fil fil" stroke-width="7.5" x="160" y="195"/>
+          </symbol>
+
+		  <symbol viewBox="0 0 500 500" id="apps-icon">
+		  	<style type="text/css">
+		  		.str {stroke:inherit;}
+		  		.fil {fill: inherit;
+		  	</style>
+		  	<path class="str fil" d="M200 190h100c6 0 10 4 10 10v100c0 6-4 10-10 10h-100c-6 0-10-4-10-10v-100c0-6 4-10 10-10zm0-150h100c6 0 10 4 10 10v100c0 6-4 10-10 10h-100c-6 0-10-4-10-10v-100c0-6 4-10 10-10zm0 300h100c6 0 10 4 10 10v100c0 6-4 10-10 10h-100c-6 0-10-4-10-10v-100c0-6 4-10 10-10zm-150-150h100c6 0 10 4 10 10v100c0 6-4 10-10 10h-100c-6 0-10-4-10-10v-100c0-6 4-10 10-10zm0-150h100c6 0 10 4 10 10v100c0 6-4 10-10 10h-100c-6 0-10-4-10-10v-100c0-6 4-10 10-10zm0 300h100c6 0 10 4 10 10v100c0 6-4 10-10 10h-100c-6 0-10-4-10-10v-100c0-6 4-10 10-10zm300-150h100c6 0 10 4 10 10v100c0 6-4 10-10 10h-100c-6 0-10-4-10-10v-100c0-6 4-10 10-10zm0-150h100c6 0 10 4 10 10v100c0 6-4 10-10 10h-100c-6 0-10-4-10-10v-100c0-6 4-10 10-10zm0 300h100c6 0 10 4 10 10v100c0 6-4 10-10 10h-100c-6 0-10-4-10-10v-100c0-6 4-10 10-10z" stroke-width="10"/>
+		  </symbol>
+	</defs>
+</svg>
