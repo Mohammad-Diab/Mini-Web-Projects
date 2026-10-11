@@ -28,6 +28,10 @@ jobs:
           git ls-files -z | xargs -0 cp --parents -t _site
           rm -rf _site/.github
           find _site -name index.htm -execdir sh -c '[ -e index.html ] || cp index.htm index.html' \;
+          for d in _site/*/; do
+            page=$(ls "$d" | grep -m1 -E '\.html?$' || true)
+            if [ ! -e "${d}index.html" ] && [ -n "$page" ]; then cp "$d$page" "${d}index.html"; fi
+          done
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
