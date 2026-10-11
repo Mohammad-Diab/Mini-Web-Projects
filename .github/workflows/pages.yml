@@ -25,8 +25,9 @@ jobs:
       - name: Prepare site
         run: |
           mkdir _site
-          cp -r index.htm Button Checkbox LinkButton ProgressBar RadioButton ToggleButton _site/
-          find _site -name index.htm -execdir cp index.htm index.html \;
+          git ls-files -z | xargs -0 cp --parents -t _site
+          rm -rf _site/.github
+          find _site -name index.htm -execdir sh -c '[ -e index.html ] || cp index.htm index.html' \;
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
